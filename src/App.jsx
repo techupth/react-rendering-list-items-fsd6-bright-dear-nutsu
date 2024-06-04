@@ -5,16 +5,16 @@ import movies from './data/movies.jsx';
 function App() {
   return (
     // <div className="App">
-    <div className="flex justify-center min-h-screen ">
+    <div className="flex justify-center min-h-screen font-['Kanit'] bg-[#E0EAFF]">
       {/* <section className="movie-list-section"> */}
       <section className="flex flex-col gap-12 my-12 ">
-        <h1 className="text-center text-4xl font-bold">Movie List Section</h1>
+        <h1 className="text-center text-4xl">Movie List Section</h1>
         {/* Render Movie Lists Here */}
         {movies.map((movie, index) => {
           return (
             <article
               key={index}
-              className="w-[400px] p-3 border rounded-xl flex gap-3 font-semibold text-xl drop-shadow-3xl"
+              className="bg-white w-[400px] p-3 border rounded-xl flex gap-3 text-xl shadow-2xl"
             >
               {/* drop-shadow-[0_4px_40px_rgba(145,124,124,0.25)] */}
               <div>
@@ -35,7 +35,7 @@ function App() {
                       return (
                         <button
                           key={index}
-                          className="p-2 bg-red-300 rounded-2xl"
+                          className="p-1 bg-red-300 rounded-2xl text-base"
                         >
                           {genre}
                         </button>
